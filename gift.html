@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kotki</title>
+    <link rel="stylesheet" href="kotki.css" />
+  </head>
+  <body onload="getCats()">
+    <audio
+      autoplay
+      loop
+      src="Sia - Unstoppable (cover by Bongo Cat).mp3"
+    ></audio>
+    <h1>Generator kotków dla Nadusii</h1>
+    <button onclick="getCats()">Nowy Kotek</button>
+    <img src="#" alt="" />
+
+    <script>
+      function getCats() {
+        const myHeaders = new Headers();
+        myHeaders.append(
+          "x-api-key",
+          "live_LL8wjnqlrS4BaA5TZ2rEI2yeO9lfoZ9IjosKMn2zjz4138V8otHCrbj4zruPvYWn"
+        );
+        myHeaders.append("Content-Type", "application/json");
+
+        const requestOptions = {
+          method: "GET",
+          headers: myHeaders,
+          redirect: "follow",
+        };
+
+        const img = document.querySelector("img");
+        fetch(
+          "https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1"
+        )
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (response) {
+            img.src = response[0].url;
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      }
+    </script>
+  </body>
+</html>
