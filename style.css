@@ -53,7 +53,6 @@ img:hover {
   }
   body {
     flex-direction: column;
-    justify-content: flex-start;
     height: 60vh;
   }
 }
