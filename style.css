@@ -55,6 +55,7 @@ img:hover {
     flex-direction: column;
   }
   main {
+    align-self: flex-start;
     max-width: 80vw;
     max-height: 80vh;
     padding: 1rem 2rem;
