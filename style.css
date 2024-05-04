@@ -53,6 +53,15 @@ img:hover {
   }
   body {
     flex-direction: column;
-    height: 60vh;
+  }
+  main {
+    max-width: 80vw;
+    max-height: 80vh;
+    padding: 1rem 2rem;
+  }
+  #present {
+    max-width: 80vw;
+    max-height: 80vh;
+    padding: 1rem 2rem;
   }
 }
