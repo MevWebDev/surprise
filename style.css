@@ -5,6 +5,7 @@
   body {
     justify-content: flex-start;
     height: 60vh;
+    background-color: red;
   }
 }
 body {
