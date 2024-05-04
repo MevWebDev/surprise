@@ -4,11 +4,11 @@
   }
   body {
     justify-content: flex-start;
+    height: 60vh;
   }
 }
 body {
-  background-image: url("background.avif");
-  background-size: cover;
+  background-color: pink;
   border: 0;
   margin: 0;
   padding: 0;
