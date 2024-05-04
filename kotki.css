@@ -1,3 +1,11 @@
+@media screen {
+  h1 {
+    font-size: 1.5rem;
+  }
+  body {
+    justify-content: flex-start;
+  }
+}
 body {
   background-image: url("background.avif");
   background-size: cover;
@@ -12,17 +20,13 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  height: 100vh;
-  @media (max-width: 300px) {
-    justify-content: flex-start;
-  }
+  height: 80vh;
 }
 h1 {
   text-align: center;
-  @media (max-width: 300px) {
+  @media screen {
     font-size: 1.5rem;
   }
-  max-width: 90vw;
 }
 img {
   border-radius: 1rem;
